@@ -1,0 +1,62 @@
+GET http://localhost:4001/music_movie
+
+####
+
+GET http://localhost:4001/music_movie/4
+
+####
+
+POST http://localhost:4001/music_movie
+Content-Type: application/json
+
+{
+    "id": 5,
+    "nombre": "Now with a smile on my vow [Regular Edition]",
+    "imagen": "https://assets.official-goods-store.jp/product/UPCH-20516/dd6dbc26b3e829e1cfba5ca01e4e5229b5a353a22083b89daf0752eb927b08de.jpg",
+    "tipo": "2nd MINI ALBUM",
+    "precio": "2,090 yenes",
+    "stock": "200"
+}
+
+###
+
+PUT http://localhost:4001/music_movie
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nombre": "album act",
+    "imagen": "",
+    "tipo": "10mo MINI ALBUM",
+    "precio": "2,090 yenes",
+    "fecha_lanzamiento": "2024-03-22",
+    "info_producto": "Regular Edition [CD]",
+    "contenido": [
+      "01. ",
+      "02. ",
+      "03. ",
+      "04. ",
+      "05. ",
+      "06. ",
+      "07. ",
+      "08. ",
+      "09. ",
+      "10. ",
+      "11. ",
+      "12. "
+    ],
+    "notas": [
+      "* Common to all CD contents",
+      "* The product image is an image. It may be slightly different from the actual one. Please note."
+    ]
+}
+###
+PUT http://localhost:4001/music_movie/6
+Content-Type: application/json
+
+{
+    "cantidadComprada": "50" }
+
+####
+
+DELETE http://localhost:4001/music_movie/4

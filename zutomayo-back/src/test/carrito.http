@@ -1,0 +1,56 @@
+GET http://localhost:4001/carrito
+
+####
+
+GET http://localhost:4001/orden/2
+
+####
+
+POST http://localhost:4001/carrito
+Content-Type: application/json
+
+{
+  "id": 3,
+  "nombre": "Waking up from correct lies [Regular Edition]",
+  "imagen": "https://assets.official-goods-store.jp/product/UPCH-20497/5dc8a02fd2292a64173d8b189641b5ac61f4b552fc1b3b96a09bcd0f68fadcbf.jpg",
+  "tipo": "1st MINI ALBUM",
+  "precio": "2037",
+  "cantidad": "2"
+}
+
+###
+
+PUT http://localhost:4001/music_mocavie
+Content-Type: application/json
+
+{
+    "id": 2,
+    "nombre": "album act",
+    "imagen": "",
+    "tipo": "10mo MINI ALBUM",
+    "precio": "2,090 yenes",
+    "fecha_lanzamiento": "2024-03-22",
+    "info_producto": "Regular Edition [CD]",
+    "contenido": [
+      "01. ",
+      "02. ",
+      "03. ",
+      "04. ",
+      "05. ",
+      "06. ",
+      "07. ",
+      "08. ",
+      "09. ",
+      "10. ",
+      "11. ",
+      "12. "
+    ],
+    "notas": [
+      "* Common to all CD contents",
+      "* The product image is an image. It may be slightly different from the actual one. Please note."
+    ]
+}
+
+####
+
+DELETE http://localhost:4001/carrito/
